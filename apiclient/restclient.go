@@ -1,11 +1,10 @@
 package apiclient
 
-
 import (
 	"net/http"
 	"log"
+	"encoding/json"
 )
-
 
 func Get(url string) *http.Response {
 	resp, err := http.Get(url)
@@ -23,3 +22,10 @@ func Post(url string) *http.Response {
 	return resp
 }
 
+func Decode(resp *http.Response, v any) error {
+	err := json.NewDecoder(resp.Body).Decode(&v)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return err
+}
