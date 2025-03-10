@@ -1,26 +1,40 @@
 package main
 
-import "fmt"
+import (
+	// "github.com/dlatyshev/GoForGo/guessinggame"
+	// "github.com/dlatyshev/GoForGo/variables"
+	"github.com/dlatyshev/GoForGo/apiclient"
+	"fmt"
+	"encoding/json"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	// variables.ShowVariables()
+	// guessinggame.Game()
+	resp := apiclient.Get("https://api.restful-api.dev/objects")
 
-	var name string
-	var age int
+	defer resp.Body.Close()
+	fmt.Println(resp.StatusCode)
 
-	name = "Dmytro"
-	age = 35
-
-    fmt.Printf("Hello, %s! You are %d years old\n", name, age)
-
-	var a, b int
-	fmt.Println(a, b) // 0 0
-
-	var c, d int = 1, 2
-	fmt.Println(c, d) // 1 2
-
-
-	width, height := 100, 200
-	fmt.Println(width, height) // 100 200
-
+	// var objects []apiclient.Phone
+	// err := json.NewDecoder(resp.Body).Decode(&objects)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// for _, object := range objects {
+	// 	fmt.Println(object.Name)
+	// }
+	
+	var objects []apiclient.Phone
+	err := json.NewDecoder(resp.Body).Decode(&objects)
+	if err != nil {
+		fmt.Println(err)
+	}
+	
+	for _, object := range objects {
+		fmt.Println(object.ID)
+		fmt.Println(object.Name)
+		fmt.Println(object.Capacity)
+		fmt.Println(object.Color)
+	}
 }
