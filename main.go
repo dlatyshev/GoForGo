@@ -3,20 +3,18 @@ package main
 import (
 	// "github.com/dlatyshev/GoForGo/guessinggame"
 	// "github.com/dlatyshev/GoForGo/variables"
-	"github.com/dlatyshev/GoForGo/apiclient"
+	// "github.com/dlatyshev/GoForGo/apiclient"
 	"fmt"
+	"github.com/dlatyshev/GoForGo/interfaces"
 )
 
 func main() {
+	rectangle := interfaces.Rectangle{Width: 10, Height: 5}
+	circle := interfaces.Circle{Radius: 3}
+
+	figures := []interfaces.Shape{rectangle, circle}
 	
-	var objects []apiclient.Phone
-	response := apiclient.Get("https://api.restful-api.dev/objects")
-    err := apiclient.Decode(response, &objects)
-	if err != nil {
-		fmt.Println(err)
-	}
-	
-	for _, object := range objects {
-		fmt.Println(object.ToString())
+	for _, figure := range figures {
+		fmt.Printf("Area of %T: %.2f\n", figure, figure.Area())
 	}
 }
