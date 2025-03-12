@@ -6,10 +6,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/apiclient"
 	// "fmt"
 	// "github.com/dlatyshev/GoForGo/interfaces"
-	"github.com/dlatyshev/GoForGo/arrays"
 	// "github.com/dlatyshev/GoForGo/arrays"
+	"github.com/dlatyshev/GoForGo/maps"
 )
 
 func main() {
-	arrays.ShowSliceExamples()
+	maps.ShowMapsExamples()
 }
