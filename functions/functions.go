@@ -25,6 +25,20 @@ func ShowFunctionsExamples() {
 
 	result := anonFunc(5, 10)
 	fmt.Printf("Anonymous function result: %d\n", result) // Anonymous function result: 50
+
+
+	// Function as a parameter
+	result2 := Calculate(5, 10, func(x, y int) int {
+		return x * y
+	})
+	fmt.Println(result2) // 50
+
+	result3 := Calculate(5, 10, Add)
+	fmt.Println(result3) // 15
+
+
+	myFunc := returnFunc(1)
+	myFunc() // Positive flag
 }
 
 func Add(x, y int) int {
@@ -56,5 +70,26 @@ func Sum(numbers ...int) int {
 		sum += number
 	}
 	return sum
+}
+
+func Calculate(a, b int, operation func(int, int) int) int {
+	return operation(a, b)
+}
+
+
+func returnFunc(flag int) func() {
+    if flag < 0 {
+		return func() {
+			fmt.Println("Negative flag")
+		}
+	} else if flag == 0 {
+		return func() {
+			fmt.Println("Zero flag")
+		}
+	} else {
+		return func() {
+			fmt.Println("Positive flag")
+		}
+	}
 }
 
