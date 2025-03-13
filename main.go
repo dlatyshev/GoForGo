@@ -7,9 +7,9 @@ import (
 	// "fmt"
 	// "github.com/dlatyshev/GoForGo/interfaces"
 	// "github.com/dlatyshev/GoForGo/arrays"
-	"github.com/dlatyshev/GoForGo/maps"
+	"github.com/dlatyshev/GoForGo/strings"
 )
 
 func main() {
-	maps.ShowMapsExamples()
+	strings.ShowMapsExamples()
 }
