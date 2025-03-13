@@ -8,9 +8,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/interfaces"
 	// "github.com/dlatyshev/GoForGo/arrays"
 	// "github.com/dlatyshev/GoForGo/strings"
-	 "github.com/dlatyshev/GoForGo/buf"
+	//  "github.com/dlatyshev/GoForGo/buf"
+	"github.com/dlatyshev/GoForGo/maps"
 )
 
 func main() {
-	buf.ShowBufExamples()
+	maps.ShowMapsExamples()
 }
