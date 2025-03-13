@@ -7,9 +7,10 @@ import (
 	// "fmt"
 	// "github.com/dlatyshev/GoForGo/interfaces"
 	// "github.com/dlatyshev/GoForGo/arrays"
-	"github.com/dlatyshev/GoForGo/strings"
+	// "github.com/dlatyshev/GoForGo/strings"
+	 "github.com/dlatyshev/GoForGo/buf"
 )
 
 func main() {
-	strings.ShowMapsExamples()
+	buf.ShowBufExamples()
 }
