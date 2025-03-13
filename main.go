@@ -9,9 +9,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/arrays"
 	// "github.com/dlatyshev/GoForGo/strings"
 	//  "github.com/dlatyshev/GoForGo/buf"
-	"github.com/dlatyshev/GoForGo/maps"
+	// "github.com/dlatyshev/GoForGo/maps"
+	"github.com/dlatyshev/GoForGo/functions"
 )
 
 func main() {
-	maps.ShowMapsExamples()
+	functions.ShowFunctionsExamples()
 }
