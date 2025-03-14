@@ -13,10 +13,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/functions"
 	// "github.com/dlatyshev/GoForGo/constants"
 	// "github.com/dlatyshev/GoForGo/pointers"
-	"github.com/dlatyshev/GoForGo/structs"
+	// "github.com/dlatyshev/GoForGo/structs"
+	"github.com/dlatyshev/GoForGo/methods"
 )
 
 func main() {
-	structs.ShowStructsExamples()
-	structs.ShowStructsExamples2()
+	methods.ShowMethodsExamples()
 }
