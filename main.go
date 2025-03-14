@@ -16,5 +16,5 @@ import (
 )
 
 func main() {
-	pointers.ShowPointersExamples()
+	pointers.ShowArrayPointersExamples()
 }
