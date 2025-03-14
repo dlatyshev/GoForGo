@@ -12,9 +12,11 @@ import (
 	// "github.com/dlatyshev/GoForGo/maps"
 	// "github.com/dlatyshev/GoForGo/functions"
 	// "github.com/dlatyshev/GoForGo/constants"
-	"github.com/dlatyshev/GoForGo/pointers"
+	// "github.com/dlatyshev/GoForGo/pointers"
+	"github.com/dlatyshev/GoForGo/structs"
 )
 
 func main() {
-	pointers.ShowArrayPointersExamples()
+	structs.ShowStructsExamples()
+	structs.ShowStructsExamples2()
 }
