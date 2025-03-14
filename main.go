@@ -10,9 +10,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/strings"
 	//  "github.com/dlatyshev/GoForGo/buf"
 	// "github.com/dlatyshev/GoForGo/maps"
-	"github.com/dlatyshev/GoForGo/functions"
+	// "github.com/dlatyshev/GoForGo/functions"
+	"github.com/dlatyshev/GoForGo/constants"
 )
 
 func main() {
-	functions.ShowFunctionsExamples()
+	constants.ShowConstantsExamples()
 }
