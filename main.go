@@ -14,10 +14,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/constants"
 	// "github.com/dlatyshev/GoForGo/pointers"
 	// "github.com/dlatyshev/GoForGo/structs"
-	"github.com/dlatyshev/GoForGo/methods"
+	// "github.com/dlatyshev/GoForGo/methods"
+	"github.com/dlatyshev/GoForGo/point_vs_value"
 )
 
 func main() {
-	methods.ShowMethods2Example()
-	methods.ShowAnonymousMethodsExample()
+	pointvsvalue.ShowPointVsValueExample()
 }
