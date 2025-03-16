@@ -16,9 +16,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/structs"
 	// "github.com/dlatyshev/GoForGo/methods"
 	// "github.com/dlatyshev/GoForGo/point_vs_value"
-	"github.com/dlatyshev/GoForGo/methods_for_standards"
+	// "github.com/dlatyshev/GoForGo/methods_for_standards"
+	"github.com/dlatyshev/GoForGo/constructors"
 )
 
 func main() {
-	methodsforstandards.ShowCustomTypeExample()
+	constructors.ShowConstructorsExample()
 }
