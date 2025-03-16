@@ -15,9 +15,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/pointers"
 	// "github.com/dlatyshev/GoForGo/structs"
 	// "github.com/dlatyshev/GoForGo/methods"
-	"github.com/dlatyshev/GoForGo/point_vs_value"
+	// "github.com/dlatyshev/GoForGo/point_vs_value"
+	"github.com/dlatyshev/GoForGo/methods_for_standards"
 )
 
 func main() {
-	pointvsvalue.ShowPointVsValueExample()
+	methodsforstandards.ShowCustomTypeExample()
 }
