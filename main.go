@@ -18,5 +18,6 @@ import (
 )
 
 func main() {
-	methods.ShowMethodsExamples()
+	methods.ShowMethods2Example()
+	methods.ShowAnonymousMethodsExample()
 }
