@@ -22,5 +22,5 @@ import (
 )
 
 func main() {
-	interfaces.ShowInterfaces2Example()
+	interfaces.ShowInterfaces4Example()
 }
