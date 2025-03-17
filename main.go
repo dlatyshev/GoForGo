@@ -17,9 +17,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/methods"
 	// "github.com/dlatyshev/GoForGo/point_vs_value"
 	// "github.com/dlatyshev/GoForGo/methods_for_standards"
-	"github.com/dlatyshev/GoForGo/constructors"
+	// "github.com/dlatyshev/GoForGo/constructors"
+	"github.com/dlatyshev/GoForGo/interfaces"
 )
 
 func main() {
-	constructors.ShowConstructorsExample()
+	interfaces.ShowInterfaces2Example()
 }
