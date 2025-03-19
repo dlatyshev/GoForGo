@@ -18,9 +18,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/methods_for_standards"
 	// "github.com/dlatyshev/GoForGo/constructors"
 	// "github.com/dlatyshev/GoForGo/interfaces"
-	"github.com/dlatyshev/GoForGo/embedinterfaces"
+	// "github.com/dlatyshev/GoForGo/embedinterfaces"
+	"github.com/dlatyshev/GoForGo/deferred"
 )
 
 func main() {
-	embedinterfaces.ShowExamples()
+	deferred.ShowDeferredExample()
 }
