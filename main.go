@@ -19,9 +19,10 @@ import (
 	// "github.com/dlatyshev/GoForGo/constructors"
 	// "github.com/dlatyshev/GoForGo/interfaces"
 	// "github.com/dlatyshev/GoForGo/embedinterfaces"
-	"github.com/dlatyshev/GoForGo/deferred"
+	// "github.com/dlatyshev/GoForGo/deferred"
+	"github.com/dlatyshev/GoForGo/concurrency"
 )
 
 func main() {
-	deferred.ShowDeferredExample()
+	concurrency.ShowChannelCloseExample()
 }
