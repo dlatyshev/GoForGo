@@ -24,5 +24,5 @@ import (
 )
 
 func main() {
-	concurrency.ShowChannelCloseExample()
+	concurrency.ShowMutexExample()
 }
